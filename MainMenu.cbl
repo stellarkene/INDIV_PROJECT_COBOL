@@ -84,26 +84,115 @@
                    CALL "SYSTEM" USING UTIL-PROG-PATH
 
                    PERFORM EXIT-PROMPT
-
                    
                    WHEN 2
-                       DISPLAY "2"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_2.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_2" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 3
-                       DISPLAY "3"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_3.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_3" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 4
-                       DISPLAY "4"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_4.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_4" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 5
-                       DISPLAY "5"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_5.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_5" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 6
-                       DISPLAY "6"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_6.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_6" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 7
-                       DISPLAY "7"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_7.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_7" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 8
-                       DISPLAY "8"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_8.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_8" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 9
-                       DISPLAY "9"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_9.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_9" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 10
-                       DISPLAY "10"
+                   PERFORM CLEAR-SCREEN
+
+                   IF UTIL-OS-NAME = "Windows_NT"
+                   MOVE "cd ..\sequence & sqnc_10.exe" TO UTIL-PROG-PATH
+                   ELSE
+                   MOVE "cd ../sequence && ./sqnc_10" TO UTIL-PROG-PATH
+                   END-IF
+                   CALL "SYSTEM" USING UTIL-PROG-PATH
+
+                   PERFORM EXIT-PROMPT
+
                    WHEN 11
                        DISPLAY "EXITING..."
 
@@ -129,6 +218,6 @@
 
       *EXIT-PROMPT
        EXIT-PROMPT.
-               DISPLAY "PRESS ENTER TO EXIT"
+               DISPLAY "PRESS ENTER TO PROCEED"
                ACCEPT OMITTED
            EXIT PARAGRAPH.
